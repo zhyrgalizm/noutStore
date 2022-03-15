@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+.title_back{
+    width: 100%;
+    height: 25vh;
+    background: url('../../Images/pic/inner_page_banner.jpg') center,no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.title_back h2{
+content: '';
+position: absolute;
+top:50px;
+left: 10%;
+font-size: 50px;
+color: rgba(185, 10, 216, 0.808);
+font-weight: 800;
+font-family:'Roboto'  ;
+}
+.menu .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.menu_card{
+    flex: 0 1 22%;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.menu_card:hover {
+    height: 250px;
+    box-shadow:  0px 5px 55px 0 rgba(185, 10, 216, 0.808);
+} 
+
+.menu_card img { 
+    width: 100%;
+    height: 260px;
+    border: 20px solid rgba(185, 10, 216, 0.808);
+    transition: 0.5s ease 0s;
+}
+.menu_card img:hover{
+    border:1px solid white
+}
+.menu{
+    min-height: 100vh;
+}
+.menu_title{
+    padding-top:50px;
+    font-family:'Roboto' ;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(110, 110, 110);
+}
+.menu_price {
+    color: gold;
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.search{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+
+.inp{
+    height: 50px;
+    width: 600px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(209, 208, 208);
+    border: 1px solid rgba(185, 10, 216, 0.808);
+    border-radius: 10px;
+    background: black;
+    font-family: 'Roboto';
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.btn {
+    margin-left: 10px;
+    text-align: center;
+    width:50px;
+height: 30px;
+background-color: rgba(185, 10, 216, 0.808);; 
+color: #fff; 
+font-family: 'Roboto'; 
+font-weight: 500; 
+text-shadow: black 1px 1px 1px ; 
+border-radius: 5px;
+}
+.home_section {
+    /* min-height: 100vh; */
+    width: 100%;
+    min-height: 180vh;
+    background: url('./../../Images/rog.jpg') center,no-repeat;
+    background-size: cover;
+}
+.add__btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgba(185, 10, 216, 0.808);;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-shadow: black 1px 1px 1px ;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+.add__btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+@media(max-width:1200px) {
+
+
+.card__img{
+    height: 220px;
+}
+.menu_title{
+    font-size: 20px;
+
+}
+.menu_price{
+       font-size: 20px;
+    
+}
+}
+
+@media(max-width:992px) {
+    
+    .menu_card{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .card__img{
+        height: 210px;
+    }
+    .menu_title{
+        margin-top: 5%;
+        font-size: 18px;
+    }
+    .menu_price{
+           font-size: 15px;
+        
+    }
+    }
+
+@media(max-width:767px) {
+    .menu_title h2{
+        margin-top: 20px;
+    }
+    .title_back h2{
+         position: absolute; 
+         top: 4px; 
+         font-size: 35px;
+    }
+    .menu_card{
+        flex: 0 1 50%;
+    }
+    .image{
+        width: 80px;
+        height: 80px;
+    }
+    .menu_title{
+        font-size: 15px;
+    }
+    .menu_price{
+           font-size: 13px;
+        
+    }
+    .title_back{
+        width: 100%;
+        height: 10vh;
+        
+    }
+    
+    .inp{
+        right: 5%;
+        height: 50px;
+        width: 200px;
+    }
+    .card__img{
+        height: 210px;
+        padding: 10px;
+    }
+    .menu_card{
+        margin-top: 15%;
+        margin-bottom: 20%;
+    }
+
+    
+}
+
+@media(max-width:390px) {
+    .menu_card{
+        margin-top: 20%;
+        margin-bottom: 40%;
+    }
+    .title_back h2{
+        top: 20%;
+    }
+
+    
+
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+.detail__preview{
+    width: 100%;
+    height: 25vh;
+    background: url('./../../Images/banner-detail.jpg') center, no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.title {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    font-size: 50px;
+    color: rgba(185, 10, 216, 0.808);;
+    font-weight: 800;
+    font-family: 'Roboto';
+    
+}
+.examp{
+    width: 100%;
+    border-radius: 4px;
+}
+.block{
+    margin: 100px 0;
+    display: flex;
+}
+.detail__card {
+    flex: 0 1 25%;
+}
+.detail__card h2 {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Roboto";
+    margin-bottom: 20px;
+    color: #fff;
+}
+.detail__card h3 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    margin-bottom: 30px;
+    color: rgb(195, 169, 20);
+
+}
+
+.detail__card p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: rgb(179, 175, 175);
+    
+}
+.detail__add{
+align-items: center;
+margin-top: 30px;
+}
+.detail__add input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid ;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Roboto';
+    background: rgb(179, 178, 178);
+}
+.add__btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgba(185, 10, 216, 0.808);;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-shadow: black 1px 1px 1px ;
+    transition: 0.4s;
+}
+.add__btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+}
+.detail__description{
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.detail__description p{
+font-size: 20px;
+font-family: 'Roboto';
+    font-weight: 500;
+    color: rgb(138, 136, 136);
+    margin: 15px 10px;
+}
+.card1 {
+    width: 100%;
+    box-shadow: rgb(166, 0, 195) 2px 2px 20px 2px,
+    gray 5px 5px 5px ;
+    border-radius: 4px;
+    align-items: center;
+    margin-right: 60px;
+    transition: 0.6s;
+}
+.over__detail {
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background: url('./../../Images/nout.jpg') center, no-repeat;
+    background-size: cover;
+}
+@media(max-width:1200px) {
+    .title{
+        position: absolute;
+        top:40px;
+    }
+}
+    @media(max-width:767px) {
+        .title{
+            position: absolute;
+            top:18px;
+        }
+    }
+    @media(max-width:992px) {
+        .title{
+            top:15px
+        }
+    }
+    @media(max-width:390px) {
+    .over__detail {
+        height:20vh ;
+
+    }
+.card1 {
+height: 13vh;
+    }
+    .examp{
+        height: 13vh;
+    }
+    .add__btn{
+        margin-top: 5%;
+    }
+    .detail__description p{
+        font-size: 15px;
+    }
+
+}

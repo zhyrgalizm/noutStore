@@ -1,0 +1,66 @@
+.about__back {
+    width: 100%;
+    min-height: 180vh;
+    background: url('./../../Images/about_us.jpg') center, no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.peoples {
+    width: 40%;
+    border-radius: 150px;
+}
+.about__card {
+    padding: 5% 0 0 10%;
+}
+.card__text{
+    width: 40%;
+    margin-top: 30px;
+    font-family: 'Roboto';
+}
+.card__text h2{
+    font-size: 60px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: center;
+    color: rgba(185, 10, 216, 0.808);
+}
+.card__text p {
+    color: rgb(175, 175, 175);
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.paragraph {
+    margin-top: 20px;
+    z-index: -1;
+}
+.paragraph h3{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: rgb(190, 0, 0);
+    padding-bottom: 20px;
+}
+@media(max-width: 460px) {
+    .about__back{
+        background: url('./../../Images/about_back2.jpg') center, repeat;
+        background-size: cover;
+    }
+    .peoples{
+        width: 90%;
+    }
+    .card__text{
+        width: 90%;
+    }
+    .card__text h2{
+        font-size: 30px;
+    }
+    .card__text p{
+        font-size: 20px;
+        color: rgb(218, 214, 214);
+    }
+    .paragraph h3{
+        font-size: 40px;
+    }
+}

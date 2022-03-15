@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+.container{
+    max-width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background: rgba(134, 4, 185, 0.534);
+    border-radius: 15px;
+}
+
+.inputs{
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: rgba(185, 10, 216, 0.808);
+    font-family: 'Roboto';
+}
+.enter{
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(209, 208, 208);
+    border: 1px solid rgba(185, 10, 216, 0.808);
+    border-radius: 10px;
+    background: black;
+    font-family: 'Roboto';
+    padding-left: 10px;
+    margin-top: 10px;
+
+}
+.add__btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgba(185, 10, 216, 0.808);;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-shadow: black 1px 1px 1px ;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.add__btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+}
+.form__regist {
+    margin: 40px 0;
+}
+.pass__info {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+}
+.regist__page{
+    width: 100%;
+    min-height: 180vh;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   background: url('./../../../Images/rog.jpg') center, no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 460px){
+    .inputs input{
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+        padding: 5px;
+        
+    }
+    .regist__page{
+        min-height: 100vh;
+    }
+    .pass__info{
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+    }
+}

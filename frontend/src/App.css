@@ -1,0 +1,115 @@
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    background: rgb(31, 30, 30);
+}
+
+#toggle{
+    opacity: 0;
+}
+.btn2 {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 4;
+}
+/* Добавление бургера */
+.btn2 span,
+.btn2 span::before,
+.btn2 span::after {
+display: block;
+position: absolute;
+height: 3.5px;
+width: 100%;
+border-radius: 5px;
+background-color: rgb(217, 0, 255);
+transition: 0.5s ease 0s;
+}
+.btn2 span:before{
+    content: "";
+    top: -8px;
+}
+.btn2 span::after{
+    content: "";
+    top: 8px;
+}
+.sidebar {
+    position: fixed;
+    visibility: visible;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    padding: 80px 0;
+    list-style: none;
+    background-color: rgb(41, 41, 41);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.3);
+    transition: 0.8s ease 0s;
+    z-index: 3;
+}
+.menu__item {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(168, 167, 167);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.5s ease 0s;
+    font-family: 'Roboto';
+}
+.menu__item:hover {
+    background-color: #bdbdbd;
+    color: black;
+    text-shadow: rgba(185, 10, 216, 0.808) 5px 5px 10px;
+}
+
+#toggle:checked ~ .btn2 span {
+    transform: rotate(45deg);
+}
+#toggle:checked ~ .btn2 span::before{
+    top: 0;
+    transform: rotate(-90deg);
+}
+#toggle:checked ~ .btn2 span::after{
+    top: 0;
+    transform: rotate(0deg);
+}
+#toggle:checked ~ .sidebar {
+    left: 0;
+    visibility: visible;
+}
+@media(man-width:767px){
+    .burger_menu{
+        display: block;
+    }
+}
+@media(min-width:767px){
+    .burger_menu{
+        display: none;
+    }
+}
+@media(max-width:460px){
+    .burger__menu{
+        display: block;
+    }
+    .main__section{
+        min-height: 60vh;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
+@media(min-width:460px){
+    .burger__menu{
+        display: block;
+    }
+    
+}

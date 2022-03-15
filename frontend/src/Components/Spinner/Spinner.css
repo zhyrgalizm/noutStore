@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
+
+*,html{margin:0;padding:0}
+
+/* //variables
+$baseColor : #e74c3c;
+$fontColor : #fff; */
+
+body{
+  background: #000;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
+}
